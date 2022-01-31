@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Home website</title>
+   <style>
+     *{
+    top: 0;
+    left: 0;
+}
+.navbar{
+    background-color: white;
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    z-index: 100;
+    height: 100px;
+}
+
+.navbar-brand {
+    color: gray;
+    margin-left: 40px;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+.link{
+    margin:5% 50%;
+}
+.link a{
+    color:gray;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+}
+.navicon li{
+    margin-left:25%;
+}
+
+.home{
+    background-color: rgb(244, 247, 248);
+    height: 600px;
+    overflow: hidden;
+    margin-top: -30px;
+}
+.hleft{
+    position: relative;
+}
+.hcontent{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, 60%);
+    margin-top: 10%;
+
+}
+.htitle-1{
+    font-size: 30px;
+    color: gray;
+    font-weight: 300;
+}
+.htitle-2{
+    font-size: 35px;
+    color: rgb(31, 30, 30);
+    font-weight: 600;
+}
+.htext{
+    font-size: 15px;
+    text-align:justify;
+
+}
+.hbtn{
+    width: 150px;
+    background-color: rgb(120, 248, 242);
+    font-size: 14px;
+    font-weight: 800;
+    border-radius: 25px;
+    color: white;
+    margin: 3%;
+    margin-left: 12%;
+}
+
+.hbtn .arrow{
+   color: white;
+   padding-right: 5px;
+   visibility: hidden;
+}
+.hbtn:hover .arrow{
+   visibility: visible;
+  
+}
+
+.hright{
+    position: relative;
+}
+.hbg{
+    height: 500px;
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    background-image: url(m1.jpg);
+    background-size: cover;
+}
+.icon{
+    width: 40px;
+    float: right;
+    margin-top: 70px;
+    margin-right: 15px;
+    background-color: white;
+    height: 250px;
+    opacity: 0.9;
+}
+.icon li{
+    list-style-type: none;
+    color: gray;
+    margin: 5px;
+    padding: 4px;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    
+}
+
+.home2{
+    position: relative;
+    width: 90%;
+    margin-left: 90px;
+}
+.acontent{
+    position: absolute;
+    top: 40%;
+    transform: translate(-50% -40%);
+}
+.card1{
+    border: none;
+    text-align: start;
+
+}
+.ctitle{
+    font-size: 12px;
+    margin: 5px;
+    padding: 5px;
+    color: gray;
+    font-weight: 400;
+}
+.ctitle2{
+    font-size: 30px;
+    padding: 5px;
+    color:gray;
+    font-weight: 200;
+}
+.ctext1{
+    font-size: 11px;
+    margin: 5px;
+    padding: 5px;
+    color:gray;
+    font-weight: 700;
+}
+.ctext2{
+    font-size: 10px;
+    margin: 5px;
+    padding: 5px;
+    color:gray;
+    font-weight: 600;
+}
+
+
+.card2 img{
+    width: 150px;
+    margin-left: 25%;
+    padding-left: 20px;
+}
+.card2 h2{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+.card2 p{
+    text-align: center;
+    font-size: 15px;
+    padding: 30px;
+    font-weight: 400;
+}
+
+.about{
+    height: 550px;
+    background-image: url("m1.png");
+    position: relative;
+
+}
+.abg{
+    background-color: #000000;
+    height: 550px;
+    opacity: 0.9;
+}
+.about-text h6{
+    padding-top: 50px;
+    color: gray;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+.about-text h4{
+    color: gray;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 350;
+}
+.about-text h5{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.about-card{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    padding-left: 40px;
+    transform: translate(-50%,-50%);
+}
+
+.col1{
+    color: rgb(163, 163, 163);
+
+}
+.col1 i{
+    margin-top: 10%;
+    color:rgb(8, 245, 233);
+    font-size: 30px;
+}
+.col1 h4{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+}
+.col1 p{
+    font-size: 18px;
+    font-weight: 100;
+    color: rgb(202, 202, 202);
+}
+.col1 button{
+    border-radius: 25px;
+    background-color: gray;
+    outline: none;
+    border: none;
+    width: 180px;
+    height: 50px;
+    font-weight: 600;
+    color:rgb(253, 251, 251);
+    opacity: 0.5;
+
+}
+
+.about2{
+    position: relative;
+}
+.about2-text{
+    text-align: center;
+    margin-left: -12%;
+}
+.about2-text h6{
+    margin-top: 5%;
+    color: gray;
+    font-size: 11px;
+    font-weight: 400;
+
+}
+.about2-text h2{
+    text-align: center;
+    color: gray;
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: -30px;
+}
+.about2-text p{
+    color: gray;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.awork{
+    height: 300px;
+    width: 600px;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    transform: translate(-10%,30%);
+    margin-top: 10px;
+}
+
+.awork1{
+    color: lightgray;
+    text-align: center;
+    border-right: 1px solid rgb(230, 228, 228);
+    padding: 10%;
+
+}
+
+.awork-text h5{
+   font-size: 50px;
+   font-weight: 100;
+   
+
+}
+.awork-text h6{
+   font-size: 15px;
+   font-weight: 300;
+}
+
+.awork2{
+    color: lightgray;
+    text-align: center;
+    padding: 9%;
+}
+.awork3{
+    color: lightgray;
+    text-align: center;
+    border-right: 1px solid rgb(230, 228, 228);
+    margin-top: -16px;
+    padding: 5%;
+
+}
+.awork3 h5{
+    font-size: 50px;
+   font-weight: 100;
+}
+.awork4{
+    color: lightgray;
+    text-align: center;
+}
+.awork4 h5{
+    font-size: 50px;
+   font-weight: 100;
+}
+.c1{
+    height: 12px;
+    width: 12px;
+    background-color: lightskyblue;
+    border-radius: 25px;
+    margin-left: 58%;
+    margin-top: -80px;
+}
+.c2{
+    height: 12px;
+    width: 12px;
+    background-color: gray;
+    border-radius: 25px;
+    margin-left: 60%;
+    margin-top: -12px;
+}
+.news{
+    height: 1000px;
+    padding: 25px;
+}
+.nbg{
+    height: 230px;
+    background-color: lightgray;
+    margin-top: 25%;
+    
+}
+
+.ntext h4{
+    color: gray;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 40px;
+}
+.ntext h1{
+    color: gray;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.ncol{
+    margin-left: 16%;
+    margin-top: 2%;
+    width: 1000px;
+}
+.ncol .card{
+    border: none;
+    box-shadow: 5px 5px 8px rgb(180, 180, 180),-5px -5px 8px rgb(180, 180, 180);
+    
+}
+.ncol .card h6{
+    font-size: 10px;
+    color: gray;
+    margin: 5px;
+}
+.ncol .card img{
+    padding: 10px;
+    height: 180px;
+}
+.ncol .card h5{
+    font-size: 30px;
+    color: black;
+    margin: 5px;
+    font-weight: 400;
+}
+.ncol .card p{
+    font-size: 12px;
+    color: black;
+    margin: 5px;
+}
+.cmt-badge{
+    border-radius: 25px;
+    float: right;
+    background-color: lightgray;
+    font-size: 20px;
+    margin-top: -12%;
+    opacity: 0.8;
+}
+
+.product{
+    width: 800px;
+    height: 500px;
+    position: relative;
+    left: 22%;
+}
+
+.proimg{
+   width: 40%;
+   height: 400px;
+   background-image: url("pro.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-origin: content-box;
+   margin: 5%;
+}
+.protext{
+   width: 50%;
+   height: 400px;
+   margin-top: 5%;
+   padding: 25px;
+
+}
+.line{
+   background-color: rgb(194, 191, 191);
+}
+.protext h2{
+   color: gray;
+   text-align: start;
+   font-size: 25px;
+   font-weight: 400;
+   font-family:'Courier New', Courier, monospace; 
+   padding-top: 15px;
+}
+.protext p{
+   color: rgb(223, 221, 221);
+   font-size: 12px;
+   font-weight: 400;
+}
+
+.protext .line{
+   width: 380px;
+   height: 10px;
+   background-color: rgb(34, 32, 32);
+    margin-top: 30px;
+}
+.protext .list{
+margin-top: 10%;
+}
+.accordion-item{
+   border: none;
+   margin: -12px;
+}
+.collapsed-btn{
+background-color: rgb(247, 244, 244);
+border: none;
+font-size: 14px;
+outline: none;
+color: gray;
+font-weight: 500;
+height: 50px;
+width: 100%;
+border-bottom: 1px solid white;
+text-align: left;
+margin: -1px;
+}
+
+.contact{
+   height: 550px;
+   background-color: rgb(250, 249, 249);
+   margin: 20px;
+   margin-top: 5%;
+   position: relative;
+}
+.cform{
+   padding: 60px;
+}
+.cform h4{
+    color: gray;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+}
+.cform p{
+    color: rgb(184, 178, 178);
+    font-size: 12px;
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;
+}
+.cform .gmail{
+   width: 700px;
+   background-image: url("gmail.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   left: 50%;
+   transform: translate(-50%,5%);
+   float: left;
+   border-radius: 25px;
+
+   opacity: 0.7;
+
+  
+}
+.cform form{
+   width: 500px;
+   float: right;
+   position: relative;
+   left: -10%;
+   margin-top: 50px;
+   padding: 20px;
+}
+.cform .cname {
+  height: 40px;
+  background-color:white;
+  border-radius: 25px;
+  border: none;
+  font-style: italic;
+  padding-left: 15px;
+  margin: 5px;
+  width: 41%;
+}
+.cform .cemail {
+  height: 40px;
+  background-color: white;
+  border-radius: 25px;
+  border: none;
+  font-style: italic;
+  padding-left: 15px;
+  margin: 5px;
+  width: 41%;
+}
+.cform .cmsg {
+  width: 390px;
+  background-color: white;
+  border-radius: 25px;
+  border: none;
+  font-style: italic;
+  padding-left: 15px;
+  margin: 10px;
+}
+.cform .cbtn {
+  width: 400px;
+  height: 40px;
+  background-color: rgb(107, 216, 216);
+  border-radius: 25px;
+  border: none;
+  padding-left: 15px;
+  margin: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 10px;
+}
+.customer{
+  height: 180px;
+  background-image:linear-gradient(to top, #030c14, #111111);
+  padding: 5%;
+}
+
+.footer{
+    height: 400px;
+    background-color: rgb(46, 46, 46);
+    margin: 20px;
+    margin-top: -1.4%;
+}
+.footer .fbottom{
+    background-color: black;
+    height: 40px;
+    color: gray;
+    margin-top: 5%;
+}
+.footer .fbottom h4{
+    font-size: 15px;
+    padding: 7px;
+    font-weight: 400;
+}
+.fsection{
+    height: 300px;
+    width: 60%;
+    position: relative;
+    top: 10%;
+    left: 15%;
+}
+.fsection .fcol h5{
+    color: white;
+    font-size: 15px;
+    text-align: start;
+    margin-left: 12%;
+    margin-top: 20%;
+}
+.fsection .fcol p{
+    color:gray;
+    font-size: 12px;
+    text-align: justify;
+    margin-left: 12%;
+    margin-top: 2%;
+
+}
+.fsection .ficonlist li{
+    list-style-type: none;
+    float: left;
+    padding: 8px;
+    color: rgb(156, 156, 156);
+
+}
+.fsection .ficonlist2 li{
+    list-style-type: none;
+    padding: 8px;
+    color: rgb(136, 135, 135);
+    font-size: 15px;
+    font-style: italic;
+}
+.fsection .news1{
+    height: 50px;
+    width: 50px;
+    background-image: url("fn1.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    margin: 10px;
+}
+.fsection .news1 .nc1{
+    height: 15px;
+    width: 15px;
+    background-color: rgb(3, 187, 243);
+    border-radius: 50%;
+    margin-left: 70%;
+    margin-top: 18px;
+}
+.nc1title h6{
+    color: gray;
+    font-size: 12px;
+    margin-top: 25px;
+}
+.nc1title h4{
+    font-size: 12px;
+    color:white;
+}
+.cimage{
+    height: 100px;
+    width: 90%;
+    position: relative;
+    top: 18%;
+    left: 30%;
+    transform: translate(-30%,18%);
+    
+
+}
+.cimage .cl1{
+    position: relative;
+    top: 18%;
+    left: -90%;
+    height: 100px;
+    padding-left: 25%;
+   
+}
+.cimage .cl1 img{
+   height: 100px;
+   opacity: 1;
+   margin-top: 5px;
+}
+
+@media screen and (max-width:667px){
+    .navbar{
+        width: 100%;
+       
+    }
+    .navbar-brand{
+        margin-left: 1px;
+    }
+    .navbar-collapse{
+        background-color: black;
+        margin-left: -3%;
+    }
+    .link{
+        margin-left: -1%;
+    }
+    .link li a{
+        color: white;
+        border-bottom: 1px solid gray;
+        width: 200%;
+        padding: 18px;
+        font-size: 20px;
+
+    }
+    .link li a:hover{
+        color: black;
+        background-color:white;
+       
+
+    }
+    .iconli{
+        width: 200%;
+        height: 50px;
+      
+    }
+    .navicon{
+        width: 100%;
+        display: inline-block;
+    }
+    
+    .navicon li{
+        display:inline-block;        
+        padding: 4px;
+        width: 22%;
+        margin: 2px;
+        border-right: 2px solid gray;
+    }
+    .navicon li a {
+    border: none;
+    font-size: 20px;
+  
+    }
+   
+   
+    .home{
+        height: 280px;
+        width: 98%;
+        margin-top: 20%;
+        margin-left: 2%;
+    }
+    .hright{
+        height: 350px;
+        order: 1;
+        margin-top: -100%;
+        margin-left: -80%;
+        width: 90%;
+
+    }
+    .hright .icon {
+        background-color: rgb(33, 212, 212);
+        margin-top: -1%;
+        
+    }
+    .hright .icon li{
+        color: white;        
+    }
+   
+    .hbg{
+        height:300px;
+    }
+    .hleft{
+        width: 400px;
+        margin-top: -100%;
+        z-index: 1;
+        margin-left: 20px;
+        padding: 2%;
+    }
+   
+    .hcontent{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    margin-top: 8%;
+    transform: translate(-50%, 80%);
+    text-align: left;
+
+    }
+    .hcontent .htext{
+        font-size: 15px;
+    }
+
+
+
+
+
+.about{
+    margin-top: 15%;
+}
+.about .abg{
+   height: 1200px;
+}
+.col1 h4{
+    font-size: 25px;
+}
+.col1 p{
+    font-size: 14px;
+    font-weight: 100;
+    color: rgb(202, 202, 202);
+}
+
+
+.about2{
+    margin-top: 190%;
+    text-align: left;
+    width: 100%;
+}
+.about2 .awork {
+    width: 94%;
+    margin-left: -16%;
+}
+.about2 .about2-text {
+    padding-left: 50px;
+}
+.awork .awork-text h5{
+    font-size: 30px;
+}
+.awork .awork-text h6{
+    font-size: 15px;
+    text-align: left;
+}
+
+.news .nbg{
+    margin-top: 80%;
+}
+.nbg .ncol{
+    padding: 26px;
+    width: 110%;
+    margin-left: -1%;
+
+}
+.nbg .ncol .card{
+    width: 90%;
+}
+.nbg .ncol .card h5{
+    font-size: 20px;
+}
+.product{
+    width:90%;
+    padding: 20px;
+    margin-left: -20%;
+}
+.product .proimg{
+    width: 90%;
+    height: 380px;
+    margin-top: 180%;
+}
+.product .protext{
+    width: 100%;
+    height: 500px;
+}
+.product .protext .line{
+    width: 100%;
+}
+.contact{
+    margin-top: 275%;
+    width: 90%;
+    
+}
+.cform{
+    height: 1000px;
+}
+.cform .gmail{
+    margin-top: 10%;
+    width: 320px;
+}
+.cform form{
+    margin-top: -5%;
+
+}
+.cform .cname{
+    margin-left: 50%;
+    width: 60%;
+}
+.cform .cemail{
+    margin-left: 50%;
+    width: 60%;
+}
+.cform .cmsg{
+    margin-left: 50%;
+    width: 60%;
+}
+.cform .cbtn{
+    margin-left: 50%;
+    width: 60%;
+}
+.customer{
+    width: 100%;
+    height: 500px;
+    background-image:linear-gradient(to top, #000508, #3a3737);
+
+}
+
+.customer img{
+    width: 180px;
+    height: 180px;
+    padding: 1px;
+    margin-left: 25%;
+    margin-bottom: -9%;
+
+}
+.footer{
+    width: 90%;
+    height: 700px;
+}
+
+.fcol{
+    margin-top: -45%;
+    margin-left: -15%;
+}
+.footer .fabout p{
+    width: 120%;
+}
+
+.fnews {
+    margin-top: 0.1px;
+}
+.fnews .fnrow{
+    width: 170%;
+}
+.fnews .fnrow .fnc1{
+    width: 20%;
+}
+.fnews .fnrow .fnewst1{
+    width: 70%;
+    margin-left: 5%;
+}
+.fsection .fcontact{
+    margin-top: 1%;
+}
+.fsection .ficonlist2{
+    width: 150%;
+}
+
+
+.footer .fbottom{
+    margin-top: 118%;
+}
+.c1{
+    margin-left: 53%;
+}
+}
+ 
+@media screen and (min-width:668px) and (max-width: 1024px) { 
+    .navbar{
+        width: 100%;
+    }
+    
+   
+    .navbar-collapse{
+        background-color: black;
+        margin-top: 5%;
+    }
+  
+    .navbar .link li a{
+        color: white;
+        font-size: 25px;
+        border-bottom: 1px solid gray;
+              
+    }
+    
+  
+   
+   
+    .home{
+        height: 400px;
+        width: 100%;
+        margin-top: 15%;
+        padding: 2%;
+    }
+    .hright{
+        height: 600px;
+        width: 120%;
+        margin-left: -70%;
+        margin-top: -150%;
+    }
+    .hright .icon {
+        background-color: rgb(33, 212, 212);
+        
+    }
+    .hright .icon li{
+        color: white;     
+        font-size: 18px;   
+    }
+    .hleft{
+        margin-top: -70%;
+        z-index: 1;
+        width: 600px;
+    }
+   
+    .hcontent{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, 80%);
+
+    }
+    #Services .row{
+        width: 105%;
+    }
+    #Services .sc1 .card{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    #Services .sc2{
+        width: 100%;
+    }
+    .hcontent .htext{
+        font-size: 15px;
+    }
+    .about{
+        width: 100%;
+    }
+    .about .abg{
+       height: 1200px;
+    }
+    
+   
+    .about2{
+        margin-top: 90%;
+        width: 100%;
+    }
+   
+    .about2 .about2-text {
+        margin-left:4%;
+    }
+    .news{
+        margin-top: 60%;
+        width: 100%;
+    }
+   .news .nbg{
+       margin-top: -2%;
+   }
+    .nbg .ncol{
+        padding: 25px;
+        width: 100%;
+    
+    }
+    .nbg .ncol .nc1{
+        width: 100%;
+        margin-left: -17%;
+    }
+    .product{
+        width:100%;
+        margin-left: -24%;
+    }
+    .product .proimg{
+        width: 40%;
+       
+    }
+    .product .protext{
+        width: 45%;
+        margin-left: 3%;
+    }
+    
+   
+    .contact{
+        width: 100%;
+        margin-left: -1%;
+        
+    }
+   
+    .cform .cname{
+        width: 100%;
+    }
+    .cform .cemail{
+        width: 100%;
+    }
+    .cform .cmsg{
+        width: 100%;
+    }
+    .cform .cbtn{
+        width: 100%;
+    }
+    .customer{
+        width: 100%;
+    }
+    
+   .footer{
+       width: 100%;
+       margin-left: -0.1%;
+   }
+   .footer .fsection{
+       margin-left: -15%;
+       width: 95%;
+   }
+    .footer .fbottom{
+        margin-top: 10%;
+    }
+  
+}   
+
+   </style>
+</head>
+<body>
+   
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid ">
+                  <a class="navbar-brand" href="#Home"><h5><b style="color: black;;">jevelin</b>startup</h5></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav p-2 link">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Services">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#About">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#News">News</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Contact">Contacts</a>
+                      </li>
+                      <li class="iconli">
+                        <ul class="navbar-nav p-2 navicon">
+                            <li class="nav-item ">
+                              <a href=""><i class="fa fa-search"></i></a>                      
+                            </li>
+                            <li class="nav-item">
+                              <a href=""><i class="fa fa-facebook"></i></a>                      
+                            </li>
+                            <li class="nav-item">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a href=""><i class="fa fa-instagram"></i></a>
+                            </li>
+                          </ul>
+                      </li>
+                       
+                      
+                    </ul>
+
+                    
+                  </div>
+                </div>
+            </nav>
+      
+    
+        <div class="home" id="Home">
+            <div class="row m-5 p-2">
+               
+                <div class="col-lg-6 col-sm-12 col-md-6">
+                    <div class="hleft">
+                        <div class="hcontent">
+                            <h4 class="htitle-1">Time to Creaate Your</h4>
+                            <h3 class="htitle-2">Startup Website</h3>
+                            <p class="htext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, beatae aut? Nisi accusantium libero tempore quisquam velit!</p>
+                            <button class="btn hbtn"><i class="fa fa-arrow-left arrow"  ></i>LEARN MORE...</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-sm-12 col-md-6">
+                    <div class="hright">
+                       <div class="hbg">
+                           <div class="icon">
+                                <li><i class="fa fa-phone"></i></li>
+                                <li><i class="fa fa-facebook"></i></li>
+                                <li><i class="fa fa-calendar"></i></li>
+                                <li><i class="fa fa-instagram"></i></li>
+                                <li><i class="fa fa-facebook"></i></li>
+                                <li><i class="fa fa-envelope"></i></li>
+                                
+                           </div>
+                       </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="container p-3" id="Services">
+            <div class="row g-lg-4 p-lg-5 mb-2">
+                <div class="col-sm-12 p-3 col-md-12 order-md-2 col-lg-4 order-lg-1 sc1">
+                    <div class="card">
+                        <div class="card-body bg-light">
+                            <h5 class="ctitle">BUILDING YOUR VISION</h5>
+                            <h5 class="ctitle2">Lots of Useful Features For Your Future Website</h5><hr>
+                            <P class="ctext1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore voluptati Repellat ducimus tempora debitis quo voluptatibus corporis eius atque.</P><hr>
+                            <P class="ctext2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus eos ducimus. Repellat ducimus tempora debitis quo voluptatibus corporis eius atque Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus eos ducimus. Repellat ducimus tempora debitis quo voluptatibus corporis eius atque..</P>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-12 order-md-1 p-3 col-lg-8 mt-2 text-center" style="box-shadow: 1px 1px 10px gray,-1px -1px 10px lightgray;">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="row justify-content-center p-1 mb-2 g-lg-1 sc2">
+                                <div class="col-sm-6">
+                                  <div class="card p-4">
+                                    <img src="s2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body bg-light">
+                                        <h4>Responsive</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, ratione est voluptatem voluptate modi odit qui asperiores dolore, eius nesciunt nulla alias sequi aperiam quam veritatis consectetur deleniti? Dolores, doloribus.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-sm-6 ">
+                                  <div class="card p-4">
+                                    <img src="s1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body bg-light">
+                                        <h4>Customizable</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, ratione est voluptatem voluptate modi odit qui asperiores dolore, eius nesciunt nulla alias sequi aperiam quam veritatis consectetur deleniti? Dolores, doloribus.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="row sc2 justify-content-center p-1 mb-2 g-lg-1">
+                                <div class="col-sm-6">
+                                  <div class="card p-4">
+                                    <img src="s2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body bg-light">
+                                        <h4>Responsive</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, ratione est voluptatem voluptate modi odit qui asperiores dolore, eius nesciunt nulla alias sequi aperiam quam veritatis consectetur deleniti? Dolores, doloribus.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <div class="card p-4">
+                                      <img src="s1.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body bg-light">
+                                          <h4>Customizable</h4>
+                                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, ratione est voluptatem voluptate modi odit qui asperiores dolore, eius nesciunt nulla alias sequi aperiam quam veritatis consectetur deleniti? Dolores, doloribus.</p>
+                                      </div>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 5%;">
+                <div class="c1"></div>
+                <div class="c2"></div>
+               </div>
+        </div>
+       
+        
+      
+
+        <div id="About">
+            <div class="about">
+                <div class="container-fluid abg">
+                    <div class="about-text">
+                        <h6>ABOUT PRODUCT</h6>
+                        <h4>So how does the</h4>
+                        <h5>product work?</h5>
+                    </div>
+                    
+                    <div class="row mx-5 text-center p-1">
+                        <div class="col-sm-12 col-md-12 col-lg-4 col1">
+                            <i class="fa fa-headphones"></i>
+                            <h4>Awesome Support</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Ipsa ab rem quisquam vel consequatur eos dolor quaerat sequi! Placeat aliquam commodi adipisci quisquam necessitatibus <br> saepe accusamus doloremque rerum magni?</p>
+                            <button class="">LEARN MORE</button>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-4 col1">
+                            <i class="fa fa-headphones"></i>
+                            <h4>Multi purpose</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Ipsa ab rem quisquam vel consequatur eos dolor quaerat sequi! Placeat aliquam commodi adipisci quisquam necessitatibus <br> saepe accusamus doloremque rerum magni?</p>
+                            <button class="">LEARN MORE</button>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-4 col1">
+                            <i class="fa fa-headphones"></i>
+                            <h4>Ckean Design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Ipsa ab rem quisquam vel consequatur eos dolor quaerat sequi! Placeat aliquam commodi adipisci quisquam necessitatibus <br> saepe accusamus doloremque rerum magni?</p>
+                            <button class="">LEARN MORE</button>
+                        </div>
+        
+                    </div>
+    
+                </div>
+                
+                
+            </div>
+    
+            <div class="about2">
+                <div class="about2-text">
+                    <h6>SOME STATISTICS</h6>
+                    <h2 class="text-center">Lets crack some <b style="color: black;">numbers</b></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Itaque, tempore possimus numquam, fuga iure eveniet id <br>libero esse, corporis molestiae omnis officia.</p>
+                </div>
+    
+                <div class="awork">
+                    <div class="row m-4 ">
+                        <div class="col-5 awork1 awork-text">
+                            <h5>57</h5>
+                            <h6>Finished projects</h6>
+                        </div>
+                        <div class="col-5 awork2 awork-text">
+                            <h5>130</h5>
+                            <h6>Happy customers</h6>
+                        </div><hr style="width:500px;height: 1.5px; color: rgb(163, 160, 160)">
+                        <div class="col-5 awork3 awork-text">
+                            <h5>29</h5>
+                            <h6>Update made</h6>
+                        </div>
+                        <div class="col-5 awork4 awork-text">
+                            <h5>19</h5>
+                            <h6>Theme features</h6>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="news" id="News">
+            <div class="nbg ">
+                <div class="ntext">
+                    <h4>I'M A PRETITLE</h4>
+                    <h1><b style="color: black;">Blog</b>news</h1>
+                </div>
+                
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="ncol container">
+                            <div class="row g-2 nc1 ">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card">
+                                        <img src="s1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h6>by shufflehound March 10, 2017</h6>  
+                                          <h5 class="card-title">How to dress with style</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <hr style="width: 60%;">
+                                          <button type="button" class="btn cmt-badge">
+                                            <i class="fa fa-comment " ><span class="badge " style="color: black;">0</span></i>
+                                          </button>
+                                        <p>UNCATEGORIZED</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card">
+                                        <img src="m1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h6>by shufflehound March 10, 2017</h6>  
+                                          <h5 class="card-title">Trip to the blue ocean</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <hr style="width: 60%;">
+                                          <button type="button" class="btn cmt-badge">
+                                            <i class="fa fa-comment "><span class="badge "  style="color: black;">0</span></i>
+                                          </button>
+                                        <p>UNCATEGORIZED</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card">
+                                        <img src="s2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h6>by shufflehound March 10, 2017</h6>  
+                                          <h5 class="card-title">Everybody needs a notepad</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <hr style="width: 60%;">
+                                          <button type="button" class="btn cmt-badge">
+                                            <i class="fa fa-comment "><span class="badge "  style="color: black;">1</span></i>
+                                          </button>
+                                        <p>UNCATEGORIZED</p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="ncol container">
+                            <div class="row g-2 nc1">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card">
+                                        <img src="s1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h6>by shufflehound March 10, 2017</h6>  
+                                          <h5 class="card-title">How to dress with style</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <hr style="width: 60%;">
+                                          <button type="button" class="btn cmt-badge">
+                                            <i class="fa fa-comment " ><span class="badge " style="color: black;">0</span></i>
+                                          </button>
+                                        <p>UNCATEGORIZED</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card">
+                                        <img src="m1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h6>by shufflehound March 10, 2017</h6>  
+                                          <h5 class="card-title">Trip to the blue ocean</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <hr style="width: 60%;">
+                                          <button type="button" class="btn cmt-badge">
+                                            <i class="fa fa-comment "><span class="badge "  style="color: black;">0</span></i>
+                                          </button>
+                                        <p>UNCATEGORIZED</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card">
+                                        <img src="s2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h6>by shufflehound March 10, 2017</h6>  
+                                          <h5 class="card-title">Everybody needs a notepad</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <hr style="width: 60%;">
+                                          <button type="button" class="btn cmt-badge">
+                                            <i class="fa fa-comment "><span class="badge "  style="color: black;">1</span></i>
+                                          </button>
+                                        <p>UNCATEGORIZED</p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+               
+               <div style="margin-top: 10%;">
+                <div class="c1"></div>
+                <div class="c2"></div>
+               </div>
+            </div>
+           
+        </div>
+        <br>
+        <div class="product mt-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 order-md-2 col-sm-12 order-lg-1 proimg">
+                </div>
+                <div class="col-lg-6 col-md-6 order-md-1 col-sm-12 protext">
+                    <h2>Somthing about <b style="color: black;">product</b></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo ex eligendi quas obcaecati dignissimos dolore, ab eos.</p>
+                    <div class="line" style="background-color: rgb(238, 236, 236);"></div>
+
+                    <div class="list">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="collapsed collapsed-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ... Some kind of feature
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body" style="color: rgb(179, 178, 178); font-size: 12px;">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.                                 </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                      <button class="collapsed collapsed-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        ... Check this wow feature
+                                      </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body" style="color: rgb(179, 178, 178); font-size: 12px;">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.                                   </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                      <button class="collapsed collapsed-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                       ... This is feature
+                                      </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body " style="color: rgb(179, 178, 178); font-size: 12px;">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.                            </div>
+                                    </div>
+                                  </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact" id="Contact">
+            <div class="cform">
+                <h4 class="text-center">Get <b style="color: black;">in touch</b></h4>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus <br> iusto accusamus! Fugit qui enim inventore quos esse amet.</p>
+                <div class="gmail">
+                    <form action="">
+                        <input type="text" name="fname" placeholder="name" class="cname">
+                        <input type="email" name="email" placeholder="email" class="cemail">
+    
+                        <textarea name="msg" rows="5" placeholder="Message text" class="cmsg"></textarea><br>
+                        <button class="btn cbtn form-control">SEND MESSAGE</button>                    
+                    </form>
+                </div>
+               
+
+            </div>
+
+        </div>
+
+        <div class="customer container-fluid">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                   <div class="row justify-content-center">
+                       <div class="col-lg-2 col-md-2 col-sm-12" style="margin-top: -2%;">
+                        <img src="c1.png" class="rounded w-70 h-50" alt="...">
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4" style="margin-top: -2%;">
+                            <img src="c1.png" class="rounded w-70 h-50" alt="...">
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4" style="margin-top: -2%;">
+                            <img src="c1.png" class="rounded w-70 h-50" alt="...">
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4" style="margin-top: -2%;">
+                            <img src="c1.png" class="rounded w-70 h-50" alt="...">
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4" style="margin-top: -2%;">
+                            <img src="c1.png" class="rounded w-70 h-50" alt="...">
+                        </div>
+                   </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-2 col-md-2 col-sm-12" style="margin-top: -2%;">
+                         <img src="c1.png" class="rounded w-70 h-50" alt="...">
+                         </div>
+                         <div class="col-lg-2 col-md-2 col-sm-4" style="margin-top: -2%;">
+                             <img src="c1.png" class="rounded w-70 h-50" alt="...">
+                         </div>
+                         <div class="col-lg-2 col-md-2 col-sm-4" style="margin-top: -2%;">
+                             <img src="c1.png" class="rounded w-70 h-50" alt="...">
+                         </div>
+                         <div class="col-lg-2 col-md-2 col-sm-4" style="margin-top: -2%;">
+                             <img src="c1.png" class="rounded w-70 h-50" alt="...">
+                         </div>
+                         <div class="col-lg-2 col-md-2 col-sm-4" style="margin-top: -2%;">
+                             <img src="c1.png" class="rounded w-70 h-50" alt="...">
+                         </div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+        </div>
+        
+        <div class="footer">
+            <footer class="fsection">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4 fcol fabout">
+                        <h5>About Us</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, aut illum eveniet nisi doloremque dignissimos quam? Quos earum ab nemo quam hic ratione animi.</p>
+                        <ul class="ficonlist">
+                            <li><i class="fa fa-twitter"></i></li>
+                            <li><i class="fa fa-facebook"></i></li>
+                            <li><i class="fa fa-instagram"></i></li>
+                            <li><i class="fa fa-phone"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 fcol fnews">
+                        <h5>Latest News</h5>
+                        <div class="row mb-1 fnrow ">
+                            
+                            <div class="col-lg-4 col-md-4 col-sm-2 mt-2 fnc1">
+                                <div class="news1">
+                                    <div class="nc1" style="color: white;">2
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 nc1title fnewst1">
+                                <h6>MOVIES</h6>
+                                <h4>Movies that we love</h4>
+                            </div>
+                        </div>
+                        <hr style="color: white;">
+                        <div class="row fnrow" style="margin-top:-25px;">
+                            <div class="col-4 mt-4 fnc1">
+                                <div class="news1">
+                                    <div class="nc1"  style="color: white;">0
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 nc1title mt-3 fnewst1" >
+                                <h6>Art</h6>
+                                <h4>Craftsman at work</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 fcol fcontact">
+                        <h5>Contacts</h5>
+                        <ul class="ficonlist2">
+                            <li><i class="fa fa-address-book" style="padding-right: 10px;"></i>Country, Street name -number</li>
+                            <li><i class="fa fa-phone" style="padding-right: 10px;"></i>032 267 899 442</li>
+                            <li><i class="fa fa-envelope-square "style="padding-right: 10px;"></i>company@name.com</li>
+                            <li><i class="fa fa-clock-o" style="padding-right: 10px;"></i>Mon-Fri:10-20 Sun:12-16</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </footer>
+            <div class="fbottom">
+                <h4 class="text-center">WorldPress Theme built by <b style="color: white;">Rajmal Patidar</b></h4>
+            </div>
+        </div>
+    
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
